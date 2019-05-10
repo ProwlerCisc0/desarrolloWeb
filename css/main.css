@@ -147,6 +147,7 @@ h3{
     margin-top: 20px;
     display: inline-block;
     transition: all .3s ease;
+    border: 2px solid #fe4918;
 
 
 }
@@ -222,12 +223,12 @@ p.slogan span{
 
 
 /* Navegación Princilal prro */
-
 .contenedor{
     width: 95%;
-    /*margin: 0 30px;*/
+    margin: 0 30px;
     
 }
+
 
 div.barra{
     background-color: #353535;
@@ -424,6 +425,9 @@ div.invitado:hover p{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
+    
 }
 div.contador{
     position: relative;
@@ -452,16 +456,209 @@ ul.resumen-evento li{
     font-size: 4em;
     margin: 0 0 10px 0;
     display: block;
+    font-family: 'Oswald', sans-serif;
+}
+/*Tabla de precios */
+
+ul.lista-precios >li{ /*Sólo primer li ]*/
+    padding: 10px;
+}
+div.tabla-precio{
+    border: 1px solid #e1e1e1;
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+    transition: all .3s ease;
+}
+div.tabla-precio ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 26px;
+}
+div.tabla-precio:hover{
+    transform: scale(1.1);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 50px #666;
+}
+div.tabla-precio h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+
+}
+div.tabla-precio p.numero {
+    color: black;
+    margin: 20px 0;
+
+}
+div.tabla-precio ul li::before{
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+}
+.button.hollow,
+.button.hollow:hover{
+    background-color: white;
+    color: #fe4918;
+  
+}
+
+/* Mapa */
+div.mapa{
+    height: 420px;
+    background-color: green;
+}
+
+/* Testimoniales */
+div.testimoniales{
+    padding-bottom: 20px;
+
+}
+div.testimonial{
+    padding: 5px;
+}
+blockquote{
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
+blockquote p{
+    text-align: left!important;
+    font-size: 1em!important;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 20px 0 65px;
+}
+blockquote p::before{
+    content: '\201c';
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    font-size: 8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #fe4918;
+}
+footer.info-testimonial{
+    padding: 0;
+
+}
+footer.info-testimonial img{
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+footer.info-testimonial img cite{
+    text-align: left;
+    color: #fe4918;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-top: 20px;
+    width: 66.6%;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+
+}
+footer.info-testimonial img cite span{
+    color: black;
+    display: block;
+    text-transform: none;
+    margin-top: 5px;
 }
 
 
+/*Newsletter */
+
+div.newsletter{
+    position: relative;
+    height: auto;
+}
+div.newsletter::before{
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+div.newsletter .contenido{
+    padding: 100px 0;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+div.newsletter .contenido p{
+    font-size: 1.2em;
+    
+}
+div.newsletter .contenido h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
+
+}
+.button.transparente{
+    background-color: transparent;
+    border-color: #ffffff;
+}
+.button:hover{
+    background-color: #fe4918;
+}
+
+/* Cuenta regresiva */
+div.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
 
 
+/*Footer */
 
-
-
-
-
+.site-footer{
+    background-color: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+footer .contenedor-footer > div{
+    color :white;
+    padding: 0px 20px;
+}
+footer h3{
+    color: white; 
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+footer h3 span{
+    color:#fe4918;
+    text-transform: uppercase;
+}
+footer .ultimos-tweets li{
+    margin-bottom: 10px;
+}
+footer nav.redes-sociales{
+    text-align: left;
+}
+p.copyright{
+    background: #3e3e3e;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    
+    
+}
 
 
 
@@ -523,6 +720,22 @@ ul.resumen-evento li{
     }
     ul.resumen-evento li{
         width: 25%;
+    }
+    ul.lista-precios >li{
+        float: left;
+        width: 33.3%;
+    }
+    div.testimonial{
+        float:left;
+        width: 33.3%;
+    }
+    div.cuenta-regresiva ul li{
+        width: 25%;
+        float: left;
+    }
+    footer .contenedor-footer > div{
+        width: 33.3%;
+        float: left;
     }
    
     
