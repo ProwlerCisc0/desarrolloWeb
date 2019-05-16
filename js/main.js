@@ -2,9 +2,7 @@
     "use strict";
     var regalo = document.getElementById('regalo');
 
-    document.addEventListener('DOMContentLoaded', function(){
-        
-
+document.addEventListener('DOMContentLoaded', function(){
         //Campos Datos usuarios
         var nombre = document.getElementById('nombre');
         var apellido = document.getElementById('apellido');
