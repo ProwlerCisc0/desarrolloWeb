@@ -89,11 +89,11 @@
                 <div id="error"></div>
            </div> 
                 <div id="paquetes" class="paquetes">
-                    <h3>Eligee el número de boletos</h3>
+                    <h3>Elige el número de boletos</h3>
                     <ul class="lista-precios clearfix">
                         <li>
                           <div class="tabla-precio">
-                          <h3>Pase por día</h3>
+                          <h3>Pase por día <small>(Viernes)</small> </h3>
                           <p class="numero">$30</p>
                           <ul>
                             <li>Bocadillos gratis</li>
@@ -102,7 +102,7 @@
                           </ul>
                           <div class="orden">
                               <label for="pase_dia">Boletos deseados</label>
-                              <input type="number" min="0" id="pase-dia" size="3" placeholder="0">
+                              <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
                           </div>
                         </div>
                       </li>
@@ -118,7 +118,7 @@
                           </ul>
                           <div class="orden">
                             <label for="pase_completo">Boletos deseados</label>
-                            <input type="number" min="0" id="pase-completo" size="3" placeholder="0">
+                            <input type="number" min="0" id="pase_completo" size="3" placeholder="0">
                         </div>
                         </div>
                       </li>
@@ -134,7 +134,7 @@
                           </ul>
                           <div class="orden">
                             <label for="pase_dosdias">Boletos deseados</label>
-                            <input type="number" min="0" id="pase-dia" size="3" placeholder="0">
+                            <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0">
                         </div>
                         </div>
                       </li>
@@ -216,6 +216,41 @@
                 </div> <!--#eventos-->
                 <div id="resumen" class="resumen clearfix">
                     <h3>Pago y Extras</h3> 
+                    <div class="caja clearfix">
+                      <div class="extras">
+                        <div class="orden">
+                          <label for="camisa_evento">Camisa del evento $10 <small>(Promoción 7% dto)</small></label><br>
+                          <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
+                        </div>
+                        <div class="orden">
+                          <label for="etiquetas">Paquete de 10 etiquetas $2 <small>(HTML5, CSS3, JavaScript)</small><br></label>
+                          <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+                        </div>
+                        <div class="orden">
+                          <label for="regalo">Seleccione un regalo</label> <br>
+                          <select id="regalo" required>
+                          <option value="">--Seleccione un regalo--</option>
+                          <option value="ETI">Etiquetas</option>
+                          <option value="PUL">Pulseras</option>
+                          <option value="PLU">Plumas</option>
+                        </select>
+                        </div>
+
+                        <input type="button" id="calcular" class="button" value="Calcular">
+                      </div>
+
+                        <div class="total">
+                          <p>Resumen: </p>
+                          <div id="lista-productos">
+
+                          </div>
+                          <p>Total:</p>
+                          <div id="suma-total">
+
+                          </div>
+                          <input type="submit" id="btnRegistro" value="Pagar" class="button">
+                        </div>
+                    </div>
                 </div>
 
         </form>
