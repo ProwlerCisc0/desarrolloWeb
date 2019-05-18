@@ -234,6 +234,13 @@ div.barra{
     background-color: #353535;
     padding: 20px 0;
 }
+.fixed{
+    position: fixed;
+    width: 100%;
+    top :0;
+    left :0;
+    z-index: 2;
+}
 
 div.logo{
     width: 80%;
@@ -245,6 +252,7 @@ div.logo img{
 
 nav.navegacion-principal{
     display: none;
+    width: 100%;
 }
 nav.navegacion-principal a{
     font-family: 'Oswald', sans-serif;
@@ -311,6 +319,10 @@ h2::after{
 
 
 /* Talleres */
+
+div.ocultar{
+    display: none;
+}
 section.programa{
    position: relative;
 }
@@ -338,8 +350,8 @@ div.programa-evento{
 }
 nav.menu-programa{
     width: 100%;
-    border-bottom: 1px solid #fe4918;
-    padding-bottom: 10px;
+    
+    
     
 }
 nav.menu-programa a{
@@ -350,8 +362,25 @@ nav.menu-programa a{
     font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
     font-size: 1.2em;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fe4918;
 
 
+}
+nav.menu-programa a.activo::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    width: 30px;
+    bottom: -20px;
+    background-image:  url(../img/talleres-flecha.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 nav.menu-programa a i, div.detalle-evento p i {
     color: #fe4918;
@@ -494,16 +523,17 @@ div.tabla-precio p.numero {
     margin: 20px 0;
 
 }
-div.tabla-precio ul li::before{
-    font-family: 'FontAwesome';
+div.tabla-precio ul li i{
+    
+    
     display: inline-block;
     vertical-align: top;
     padding: 0 5px;
     font-size: 20px;
     color: green;
     -webkit-font-smoothing: antialiased;
-    content: '\f00c';
-}
+    
+}*/
 .button.hollow,
 .button.hollow:hover{
     background-color: white;
@@ -738,6 +768,26 @@ div.resumen input{
     text-align: center;
     font-size: 2em;
     color: #fe4918;
+}
+#error{
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+div.galeria{
+    
+    padding-left: 50px;
+   
+    
+}
+div.galeria a{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+body.conferencia .navegacion-principal .activo{
+    border-bottom: 2px solid #fe4918;
 }
 
 

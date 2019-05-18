@@ -64,7 +64,7 @@
       </div>
 
       <nav class="navegacion-principal clearfix">
-        <a href="404.html">Conferencia</a>
+        <a href="conferencia.html">Conferencia</a>
         <a href="404.html">Invitados</a>
         <a href="404.html">Invitados</a>
         <a href="registro.html">Reservaciones</a>
@@ -95,11 +95,11 @@
                   <h2>Programa del evento</h2>
 
                   <nav class="menu-programa">
-                    <a href="#"><i class="fa fa-code"></i>Talleres</a>
-                    <a href="#"><i class="fa fa-comment"></i>Conferencias</a>
-                    <a href="#"><i class="fa fa-university"></i>Seminarios</a>
+                    <a href="#talleres"><i class="fa fa-code" aria-hidden="true"></i>Talleres</a>
+                    <a href="#conferencias"><i class="fa fa-comment"aria-hidden="true"></i>Conferencias</a>
+                    <a href="#seminarios"><i class="fa fa-university"aria-hidden="true"></i>Seminarios</a>
                   </nav>
-                  <div class="info-curso" id="talleres ocultar clearfix">
+                  <div class="info-curso ocultar clearfix" id="talleres">
                       <div class="detalle-evento"> 
                         <h3>HTML5, CSS3 y JavaScript</h3>
                         <p><i class="far fa-clock"></i></i>16:00 Hrs</p>
@@ -117,7 +117,47 @@
                         <a href="#" class="button float-right">Ver todos</a>
                         
                     
+                  </div> <!--Talleres-->
+
+                  <div class="info-curso ocultar clearfix" id="conferencias">
+                    <div class="detalle-evento"> 
+                      <h3>Como ser freelancer</h3>
+                      <p><i class="far fa-clock"></i></i>16:00 Hrs</p>
+                      <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                      <p><i class="fa fa-user"></i>Gregorio Sanchez</p>
+
+                    </div> 
+                    <div class="detalle-evento"> 
+                        <h3>Responsive Web Design</h3>
+                        <p><i class="far fa-clock"></i>>16:00 Hrs</p>
+                        <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                        <p><i class="fa fa-user"></i>Ignacio Rojel</p>
+
+                      </div>
+                      <a href="#" class="button float-right">Ver todos</a>
+                      
+                  
+                </div> <!--Conferencias-->
+
+                <div class="info-curso ocultar clearfix" id="seminarios">
+                  <div class="detalle-evento"> 
+                    <h3>Aprende a follar</h3>
+                    <p><i class="far fa-clock"></i></i>16:00 Hrs</p>
+                    <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                    <p><i class="fa fa-user"></i>Ignacio Rojel</p>
+
                   </div>
+                  <div class="detalle-evento"> 
+                      <h3>Responsive Web Design</h3>
+                      <p><i class="far fa-clock"></i>>20:00</p>
+                      <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                      <p><i class="fa fa-user"></i>Ignacio Rojel</p>
+
+                    </div>
+                    <a href="#" class="button float-right">Ver todos</a>
+                    
+                
+              </div> <!--Seminarios -->
                 </div>
               </div>
           </div>
@@ -168,10 +208,10 @@
     <div class="contador parallax">
         <div class="contenedor"></div>
         <ul class="resumen-evento clearfix">
-          <li><p class="numero">6</p>Invitados</li>
-          <li><p class="numero">15</p>Talleres</li>
-          <li><p class="numero">3</p>Días</li>
-          <li><p class="numero">9</p>Conferencias</li>
+          <li><p class="numero"></p>Invitados</li>
+          <li><p class="numero"></p>Talleres</li>
+          <li><p class="numero"></p>Días</li>
+          <li><p class="numero"></p>Conferencias</li>
           
         </ul>
 
@@ -186,9 +226,9 @@
             <h3>Pase por día</h3>
             <p class="numero">$30</p>
             <ul>
-              <li>Bocadillos gratis</li>
-              <li>Todas las conferencias</li>
-              <li>Todos los talleres</li>
+              <li><i class="far fa-check-square"></i>Bocadillos gratis</li>
+              <li><i class="far fa-check-square"></i>Todas las conferencias</li>
+              <li><i class="far fa-check-square"></i>Todos los talleres</li>
             </ul>
             <a href="registro.html" class="button hollow">Comprar</a>
           </div>
@@ -199,9 +239,9 @@
             <h3>Todos los días</h3>
             <p class="numero">$50</p>
             <ul>
-              <li>Bocadillos gratis</li>
-              <li>Todas las conferencias</li>
-              <li>Todos los talleres</li>
+              <li><i class="far fa-check-square"></i>Bocadillos gratis</li>
+              <li><i class="far fa-check-square"></i>Todas las conferencias</li>
+              <li><i class="far fa-check-square"></i>Todos los talleres</li>
             </ul>
             <a href="registro.html" class="button">Comprar</a>
           </div>
@@ -212,9 +252,9 @@
             <h3>Pase por 2 días</h3>
             <p class="numero">$45</p>
             <ul>
-              <li>Bocadillos gratis</li>
-              <li>Todas las conferencias</li>
-              <li>Todos los talleres</li>
+              <li><i class="far fa-check-square"></i>Bocadillos gratis</li>
+              <li><i class="far fa-check-square"></i>Todas las conferencias</li>
+              <li><i class="far fa-check-square"></i>Todos los talleres</li>
             </ul>
             <a href="registro.html" class="button hollow">Comprar</a>
           </div>
@@ -275,10 +315,10 @@
   <h2>Faltan</h2>
   <div class="cuenta-regresiva">
     <ul class="clearfix">
-      <li><p class="numero">80</p>Días</li>
-      <li><p class="numero">15</p>horas</li>
-      <li><p class="numero">5</p>Minutos</li>
-      <li><p class="numero">30</p>Segundos</li>
+      <li><p id="dias" class="numero"></p>Días</li>
+      <li><p id="horas" class="numero"></p>horas</li>
+      <li><p id="minutos" class="numero"></p>Minutos</li>
+      <li><p id="segundos" class="numero"></p>Segundos</li>
     </ul>
   </div>
 </section>
@@ -320,7 +360,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/waypoint.js"></script>
+  waypoint
+  
   <script src="js/mapa.js"></script>
   <script src="js/main.js"></script>
 
