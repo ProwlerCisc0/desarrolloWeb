@@ -165,7 +165,7 @@ ul{
 }
 div.hero{
     background-image: url(../img/encabezado.jpg);
-    height: 100vh;
+    height: 91vh;
     background-position: top center;
     background-size: cover;
 }
@@ -239,7 +239,7 @@ div.barra{
     width: 100%;
     top :0;
     left :0;
-    z-index: 2;
+    z-index: 3;
 }
 
 div.logo{
@@ -261,7 +261,7 @@ nav.navegacion-principal a{
     text-decoration: none;
     transition: all .6s ease;
     width: 100%;
-    display: block;
+    display: inline-block;
     text-align: center;
     margin-bottom: 20px;
 
